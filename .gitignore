@@ -1,0 +1,60 @@
+# =====================================================================
+# Repozitorij vsebuje samo tri razvojne izdelke: M1, M2, M3.
+# Tezni dokument (Diploma.tex, PDF, slike) NI del tega repozitorija.
+# =====================================================================
+
+# ---- Odvisnosti ----
+node_modules/
+
+# ---- Gradnja / izhod ----
+dist/
+build/
+*.local
+
+# ---- Go ----
+*.test
+*.out
+# prevedene binarne datoteke v backend mapah
+M1/backend/backend
+M2/backend/backend
+M3/backend/backend
+M1/backend/main
+M2/backend/main
+M3/backend/main
+
+# ---- Izvajalni podatki (repozitorij je samo koda) ----
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+# naložene slike: mapo ohranimo, vsebino izpustimo
+**/backend/uploads/*
+!**/backend/uploads/.gitkeep
+
+# ---- Skrivnosti / okolje ----
+.env
+*.env
+!.env.example
+
+# ---- OS / urejevalnik ----
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+*.swp
+
+# ---- Tezni dokument in gradiva (niso del repozitorija kode) ----
+/Diploma.*
+/Diploma_working_notes.md
+/Predstavitev.md
+/*.pdf
+/*.png
+/*.aux
+/*.toc
+/*.lof
+/*.lot
+/*.out
+/*.fls
+/*.fdb_latexmk
+/*.synctex.gz
